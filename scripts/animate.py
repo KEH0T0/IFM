@@ -82,8 +82,10 @@ def main(args):
 		app.prepare(ctx_id=0, det_size=(640, 640))
 
 		# prepare models under ./checkpoints
-		face_adapter = f'/home/nas4_user/taewoongkang/repos/2d/AnimateDiff/checkpoints/ip-adapter.bin'
-		controlnet_path = f'/home/nas4_user/taewoongkang/repos/2d/AnimateDiff/checkpoints/ControlNetModel'
+		# face_adapter = f'/home/nas4_user/taewoongkang/repos/2d/AnimateDiff/checkpoints/ip-adapter.bin'
+		face_adapter = args.face_adapter_path
+		# controlnet_path = f'/home/nas4_user/taewoongkang/repos/2d/AnimateDiff/checkpoints/ControlNetModel'
+		controlnet_path = args.controlnet_path
 
 		controlnet = ControlNetModel.from_pretrained(controlnet_path, torch_dtype=torch.float16).to("cuda")
 
@@ -195,6 +197,8 @@ if __name__ == "__main__":
 
 	parser.add_argument("--instantid", type=bool, default=False)
 	parser.add_argument("--face_dir", type=str, default="/home/nas4_user/taewoongkang/repos/2d/AnimateDiff/examples/kaifu_resize.png")
+	parser.add_argument("--face_adapter_path", type=str, default='/home/nas4_user/taewoongkang/repos/2d/AnimateDiff/checkpoints/ip-adapter.bin')
+	parser.add_argument("--controlnet_path ", type=str, default='/home/nas4_user/taewoongkang/repos/2d/AnimateDiff/checkpoints/ControlNetModel')
 
 	args = parser.parse_args()
 	main(args)
