@@ -68,7 +68,7 @@ or
 ```
 The results will automatically be saved to `sample/` folder.
 
-**Before generate videos, make sure that changing the config file with your saved "motion_module_path", "pretrained_model_path"**
+**Before generate videos, make sure that changing the config file with your saved "motion_module_path", "pretrained_model_path".**
 
 **Make sure that the "face_adapter_path" and "controlnet_path" changed with your saved path.**
 
