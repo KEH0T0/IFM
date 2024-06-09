@@ -2,6 +2,9 @@ wandb/
 debugs/
 outputs/
 samples/
+models/
+sample/
+checkpoints/
 __pycache__/
 ossutil_output/
 .ossutil_checkpoint/

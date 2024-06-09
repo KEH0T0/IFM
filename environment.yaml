@@ -29,6 +29,6 @@ dependencies:
       - tqdm==4.65.0
       - transformers==4.30.0
       - wandb==0.15.8
-      - xformers==0.0.22.post4
+      - xformers==0.0.22.post7
       - scipy
       - imageio[ffmpeg]

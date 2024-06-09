@@ -1,5 +1,5 @@
-ckpt_path: Path to DreamShaper
-motion_module_path: Path to Motion Module
+ckpt_path: /home/nas4_user/taewoongkang/repos/2d/AnimateDiff/checkpoints/dreamshaperXL_alpha2Xl10.safetensors
+motion_module_path: /home/nas4_user/taewoongkang/repos/2d/AnimateDiff/models/Motion_Module/mm_sdxl_v10_beta.ckpt
 
 seed:           -1
 
@@ -7,7 +7,7 @@ guidance_scale: 10
 steps: 100
 
 prompt:
-  - "photo of a supercar, 8k uhd, high quality, road, sunset, motion blur, depth blur, cinematic, filmic image 4k, 8k. Natural sunlight, vibrant color, reflections" 
+  - "portrait of a man, fireworks, 8k uhd, high quality, road, sunset, motion blur, depth blur, cinematic, filmic image 4k, 8k. Natural sunlight, vibrant color, reflections" 
   - "night view, sea beach landscape, with a lighthouse, trending on artstation, by Noah Bradley, highly detailed, high quality, 4k HDR, path tracking, calm landscape, high consistency, soft lighting, <lora:xl_more_art-full_v1:0.3> in Serene grids, transcendent fields, quiet repetitions, sublime reduction in Brooding landscapes, epic scale, German myth, layered symbolic density"
   
 n_prompt:
